@@ -19,7 +19,7 @@ if(isset($_GET['filter'])){
 <head>
 	<meta charset='utf-8'>
 	<title>Movie Reviews</title>
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php include('templates/header.html'); ?>
