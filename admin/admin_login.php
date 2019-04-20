@@ -36,6 +36,8 @@
     <br>
     <button type="submit">Submit</button>
 </form>
+
+<a href="../index.php"><p>Go Back</p></a>
     
 </body>
 </html>
