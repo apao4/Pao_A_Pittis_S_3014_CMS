@@ -83,6 +83,134 @@ body {
 
 
 
+    /* header */
+
+    #logo
+    {
+        width: 16%;
+        margin-left: 42%;
+        margin-right: 42%;
+        cursor: pointer;
+    }
+    
+    #menu
+    {
+        text-align: center;
+        margin: 0 auto;
+        background-color: brown;
+        font-size: 2em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 20px;
+    }
+    
+    #menu a
+    {
+        color:black;
+        font-family: 'Lobster', cursive;
+        padding: 3%;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    #menu a:hover
+    {
+        color: brown;
+        text-decoration: underline;
+    }
+    
+    #headerVid
+    {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* media queries */
+
+
+    /* phone */
+
+@media (max-width: 599px) {
+
+#logo
+{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#menu
+{
+    text-align: center;
+    margin: 0 auto;
+    background-color: brown;
+    font-size: 2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+#menu a
+{
+    color:black;
+    font-family: 'Lobster', cursive;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom:  0.5px solid black;
+}
+
+footer p
+{
+    font-size: 0.9em;
+}
+
+#bio, #price, #style
+{
+    font-size: 1.3em;
+}
+
+.gallery-text h3
+{
+    font-size: 2em;
+}
+
+}
+
+/* tablet */
+
+    
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    #logo
+    {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    
+    }
+
+    
+
+
+
 
 
 
