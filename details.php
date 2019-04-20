@@ -14,11 +14,12 @@ if(isset($_GET['id'])){
 <html>
 <head>
 	<meta charset='utf-8'>
-	<title>Movie Reviews</title>
+	<title>Sport Chek CMS</title>
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<?php include('templates/header.html'); ?>
-	<h1>This is the movie site</h1>
 
 <div>
 	<?php while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
