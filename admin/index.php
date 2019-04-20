@@ -14,12 +14,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to your admin panel</title>
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 </head>
 <body>
 
     <h1>Admin Dashboard</h1>
-    <h3>Welcome <?php echo $_SESSION['user_name'];?></h3> <!-- this is how you read information from a session -->
+    <h3>Welcome <?php echo $_SESSION['user_name'];?></h3>
     <p>This is the admin dashboard</p>
 
     <nav>
@@ -28,7 +27,7 @@
             <li><a href="admin_edituser.php">Edit User</a></li>
             <li><a href="admin_deleteuser.php">Delete User</a></li>
             <li><a href="scripts/caller.php?caller_id=logout">Sign Out</a></li>
-            <li><a href="admin_addmovie.php">Add Movie</a></li>
+            <li><a href="admin_addmovie.php">Add A Product</a></li>
         </ul>
     </nav>
 </body>

@@ -1,22 +1,50 @@
-#imgCovers {
-    width: 20%;
+#imgCovers 
+{
+    width:90%;
+    padding: 5%;
 }
 
-.cont li {
-    display: inline;
+.cont li 
+{
+    width: 25%;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 4%;
  }
 
-.info {
-    width: 20%;
+.info 
+{
+    width: 100%;
+    text-align: center;
 }
 
-.title {
-    width: 20%;
+.title 
+{
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont
+{
+    width: 100%;
+}
+
+#more
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 0 auto;
+}
+
+#more:hover
+{
+    color: red;
 }
 
 
-
-/* BELOW IS MY CSS... ABOVE IS PAN'S */
 
 /* body  */
 
@@ -26,57 +54,6 @@ body {
     color: black;
 }
 
-.pizza
-{
-    width: 100%;
-}
-
-.gallery {
-    width:100%;
-    position: relative;
-		padding: 0;
-		margin: 0;
-		text-align: center;
-	}
-
-	.gallery-image{
-		position: relative;
-		display: block;
-	}
-
-	.gallery-text{
-	    position: absolute;
-	    top: 40%; 
-      right: 0;
-	    bottom: 0; 
-      left: 0;
-	    text-align: center;
-	    opacity: 1;
-	}
-
-	.gallery-text h3{
-	  color: white;
-	  display: inline-table;
-      background-color: black;
-      font-family: 'Lobster', cursive;
-      font-size: 3em;
-      padding: 9px;
-    }
-    
-
-
-    #bio, #price, #style
-    {
-        margin-left: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5em;
-    }
-
-    #details
-    {
-        margin-bottom: 150px;
-        margin-top: 50px;
-    }
 
 
 
@@ -87,18 +64,19 @@ body {
 
     #logo
     {
-        width: 16%;
-        margin-left: 42%;
-        margin-right: 42%;
-        cursor: pointer;
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top:2%;
+        margin-bottom: 2%;
     }
     
     #menu
     {
         text-align: center;
         margin: 0 auto;
-        background-color: brown;
-        font-size: 2em;
+        background-color: black;
+        font-size: 1.5em;
         padding-top: 5px;
         padding-bottom: 5px;
         margin-top: 20px;
@@ -106,23 +84,19 @@ body {
     
     #menu a
     {
-        color:black;
-        font-family: 'Lobster', cursive;
-        padding: 3%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2%;
         text-decoration: none;
         cursor: pointer;
     }
     
     #menu a:hover
     {
-        color: brown;
+        color: red;
         text-decoration: underline;
     }
-    
-    #headerVid
-    {
-        width: 100%;
-    }
+
 
 
 
@@ -159,7 +133,7 @@ body {
 {
     text-align: center;
     margin: 0 auto;
-    background-color: brown;
+    background-color: black;
     font-size: 2em;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -168,12 +142,12 @@ body {
 
 #menu a
 {
-    color:black;
-    font-family: 'Lobster', cursive;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     text-decoration: none;
     cursor: pointer;
-    border-bottom:  0.5px solid black;
+    border-bottom:  0.5px solid white;
 }
 
 footer p
@@ -225,7 +199,7 @@ footer p
 
     footer
 {
-    background-color: brown;
+    background-color: black;
     height: 20px;
     padding-top: 10px;
     bottom: 0;
@@ -238,7 +212,7 @@ footer p
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: brown;
+    background-color: black;
 }
 
 

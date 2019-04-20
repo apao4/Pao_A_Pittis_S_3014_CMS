@@ -24,16 +24,15 @@ if(isset($_GET['filter'])){
 </head>
 <body>
 	<?php include('templates/header.html'); ?>
-	
-	<div class="cont">
-<?php 
-while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
-<li>
-<img id="imgCovers" src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>">
-<h2 class="title"> <?php echo $row['movies_title'];?> </h2>
-	<p class="info"> <?php echo $row['movies_storyline'];?> </p>
-	<a id="more" href="details.php?id=<?php echo $row['movies_id'];?>">Read More</a><br>
-	
+
+<div class="cont">
+	<?php while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
+
+	<li>
+		<img id="imgCovers" src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>"> <!-- image -->
+		<h2 class="title"> <?php echo $row['movies_title'];?> </h2> <!-- Product Title -->
+		<p class="info"> <?php echo $row['movies_storyline'];?> </p> <!-- Details -->
+		<a id="more" href="details.php?id=<?php echo $row['movies_id'];?>"><p>More Details</p></a>  <!-- link to more details -->
 	
 	<?php endwhile; ?>
 	</li>
