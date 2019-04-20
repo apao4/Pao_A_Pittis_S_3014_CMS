@@ -13,3 +13,106 @@
 .title {
     width: 20%;
 }
+
+
+
+/* BELOW IS MY CSS... ABOVE IS PAN'S */
+
+/* body  */
+
+body { 
+    background-color: white;
+    font-size: 14px;
+    color: black;
+}
+
+.pizza
+{
+    width: 100%;
+}
+
+.gallery {
+    width:100%;
+    position: relative;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+	}
+
+	.gallery-image{
+		position: relative;
+		display: block;
+	}
+
+	.gallery-text{
+	    position: absolute;
+	    top: 40%; 
+      right: 0;
+	    bottom: 0; 
+      left: 0;
+	    text-align: center;
+	    opacity: 1;
+	}
+
+	.gallery-text h3{
+	  color: white;
+	  display: inline-table;
+      background-color: black;
+      font-family: 'Lobster', cursive;
+      font-size: 3em;
+      padding: 9px;
+    }
+    
+
+
+    #bio, #price, #style
+    {
+        margin-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    }
+
+    #details
+    {
+        margin-bottom: 150px;
+        margin-top: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* FOOTER */
+
+    footer
+{
+    background-color: brown;
+    height: 20px;
+    padding-top: 10px;
+    bottom: 0;
+}
+
+footer p
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: brown;
+}
+
+
+
+
