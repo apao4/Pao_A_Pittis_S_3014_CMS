@@ -21,7 +21,7 @@ if(isset($_GET['id'])){
 <body>
 	<?php include('templates/header.html'); ?>
 
-<div>
+<div id="moreDetails">
 	<?php while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
 		<h2><?php echo $row['movies_title'];?></h2>
 		<img id="imgCovers" src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>"> 

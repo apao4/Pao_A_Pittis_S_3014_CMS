@@ -97,6 +97,12 @@ body {
         text-decoration: underline;
     }
 
+    #moreDetails
+    {
+        width: 80%;
+        margin: 10%;
+        text-align: center;
+    }
 
 
 
