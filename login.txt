@@ -2,3 +2,13 @@ Login Credentials
 
 Username: admin
 Password: 123
+
+or 
+
+Username: trial
+Password: trial
+
+or 
+
+Username: Soraya
+Password: password
