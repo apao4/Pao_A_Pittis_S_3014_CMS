@@ -1,23 +1,44 @@
 <?php
 
 
-function editProduct($id, $title, $username, $password){
+// function editProduct($id, $title, $username, $password){
+//     include('connect.php');
+
+//     $update_movie_query = 'UPDATE tbl_movies SET movies_title=:title, movies_storyline=:username,'; 
+//     $update_movie_query .=' movies_cover=:password';
+//     $update_movie_query .=' WHERE movies_id = :id'; 
+
+//     $update_movie_set = $pdo->prepare($update_movie_query); 
+//     $update_movie_set->execute(
+//         array(
+//             ':title'=>$title,
+//             ':username'=>$username,
+//             ':password'=>$password,
+//             ':id'=>$id
+//     )
+// );
+// }
+
+
+function editProduct($id, $title, $cover, $story){
     include('connect.php');
 
-    $update_movie_query = 'UPDATE tbl_movies SET movies_title=:title, movies_storyline=:username,'; 
-    $update_movie_query .=' movies_cover=:password';
+    $update_movie_query = 'UPDATE tbl_movies SET movies_title=:title, movies_storyline=:cover,'; 
+    $update_movie_query .=' movies_cover=:story';
     $update_movie_query .=' WHERE movies_id = :id'; 
 
     $update_movie_set = $pdo->prepare($update_movie_query); 
     $update_movie_set->execute(
         array(
             ':title'=>$title,
-            ':username'=>$username,
-            ':password'=>$password,
+            ':cover'=>$cover,
+            ':story'=>$story,
             ':id'=>$id
     )
 );
 }
+
+
 
 function addMovie($cover, $title, $story, $genre){
   
