@@ -1,4 +1,4 @@
 Login Credentials
 
-Username: myusername
-Password: password
+Username: admin
+Password: 123
