@@ -19,10 +19,9 @@ function editProduct($id, $title, $username, $password){
 );
 }
 
-function addMovie($cover, $title, $year, $run, $story, $trailer, $release, $genre){
-    // plan things out...
+function addMovie($cover, $title, $story, $genre){
+  
     try{
-    // 1. build the DB connection
     include('connect.php');
 
     // 2. Validate file
@@ -42,32 +41,27 @@ function addMovie($cover, $title, $year, $run, $story, $trailer, $release, $genr
 
     $th_copy = '../images/TH_' . $cover['name'];
     if(!copy($target_path, $th_copy)) {
-        throw new Exception('Failed to move copy file, check permission!'); // after class, figure out with php how to make the images smaller thumbnails
+        throw new Exception('Failed to move copy file, check permission!'); 
     }
    
     // 4. Adding entries to database (both tbl_movies and tbl_mov_genre)
-    $insert_movie_query = 'INSERT INTO tbl_movies(movies_cover, movies_title, movies_year,';
-    $insert_movie_query .=' movies_runtime, movies_storyline, movies_trailer, movies_release)';
-    $insert_movie_query .=' VALUES(:movies_cover, :movies_title, :movies_year,';
-    $insert_movie_query .=' :movies_runtime, :movies_storyline, :movies_trailer, :movies_release)';
+    $insert_movie_query = 'INSERT INTO tbl_movies(movies_cover, movies_title,';
+    $insert_movie_query .=' movies_storyline)';
+    $insert_movie_query .=' VALUES(:movies_cover, :movies_title,';
+    $insert_movie_query .=' :movies_storyline)';
 
     $insert_movie = $pdo->prepare($insert_movie_query);
     $insert_result = $insert_movie->execute(
         array(
             ':movies_cover'    => $cover['name'],
             ':movies_title'    => $title,
-            ':movies_year'    => $year,
-            ':movies_runtime'    => $run,
             ':movies_storyline'    => $story,
-            ':movies_trailer'    => $trailer,
-            ':movies_release'    => $release,
         )
         );
 
         var_dump($insert_movie->debugDumpParams());
-        // echo 'testeste';exit;
         if(!$insert_result){
-            throw new Exception('Failed to insert the new movie!');
+            throw new Exception('Failed to insert the new product!');
         }
 
         $last_id = $pdo->lastInsertId();
