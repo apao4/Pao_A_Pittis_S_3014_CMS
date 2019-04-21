@@ -33,7 +33,8 @@ if(isset($_GET['filter'])){
 		<h2 class="title"> <?php echo $row['movies_title'];?> </h2> <!-- Product Title -->
 		<p class="info"> <?php echo $row['movies_storyline'];?> </p> <!-- Details -->
 		<a id="more" href="details.php?id=<?php echo $row['movies_id'];?>"><p>More Details</p></a>  <!-- link to more details -->
-	
+		<a id="more" href="admin/admin_editproduct.php?id=<?php echo $row['movies_id'];?>"><p>Edit Product</p></a>
+
 	<?php endwhile; ?>
 	</li>
 </div>

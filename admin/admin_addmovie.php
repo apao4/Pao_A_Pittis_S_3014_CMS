@@ -39,10 +39,10 @@
 <p><?php echo $message;?></p>
 <?php endif;?>
     <form action="admin_addmovie.php" method="post" enctype="multipart/form-data">
-        <label for="cover">Cover Image:</label>
+        <label for="cover">Product Image:</label>
         <input type="file" name="cover" id="cover" value=""><br><br>
 
-        <label for="title">Movie Title:</label>
+        <label for="title">Product Title:</label>
         <input type="text" name="title" id="title" value=""><br><br>
 
         <label for="year">Movie Year:</label>
@@ -57,12 +57,12 @@
         <label for="release">Movie Release:</label>
         <input type="text" name="release" id="release" value=""><br><br>
 
-        <label for="story">Movie Storyline:</label>
+        <label for="story">Product Description:</label>
         <textarea name="story" id="story"></textarea><br><br>
 
-        <label for="genlist">Movie Genre:</label>
+        <label for="genlist">Category:</label>
         <select name="genList" id="genlist">
-            <option>Please Select a Movie Genre...</option>
+            <option>Please Select a Product Category...</option>
             <!-- To Do: 3. run a loop within $movie_categories and echo each genre to be proper HTML in here -->
             <?php while($movie_category = $movie_categories->fetch(PDO::FETCH_ASSOC)): ?>
             <option value="<?php echo $movie_category['genre_id'];?>">
@@ -72,9 +72,7 @@
 
         </select><br><br>
 
-        <button type="submit" name="submit">Add Movie</button>
+        <button type="submit" name="submit">Add Product</button>
     </form>
 </body>
 </html>
-
-<!-- AODA - accessibility, in ontario i think it has to do with accessbility to things? -->

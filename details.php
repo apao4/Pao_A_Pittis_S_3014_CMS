@@ -24,6 +24,9 @@ if(isset($_GET['id'])){
 <div>
 	<?php while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
 		<h2><?php echo $row['movies_title'];?></h2>
+		<img id="imgCovers" src="images/<?php echo $row['movies_cover'];?>" alt="<?php echo $row['movies_title'];?>"> 
+		<p class="info"> <?php echo $row['movies_storyline'];?> </p> 
+	
 	<?php endwhile; ?>
 </div>
 

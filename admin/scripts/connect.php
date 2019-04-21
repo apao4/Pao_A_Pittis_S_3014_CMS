@@ -1,7 +1,7 @@
 <?php 
 $db_dsn = array(
 	'host'=>'localhost',
-	'dbname'=>'db_sportchek',
+	'dbname'=>'db_sportchek_cms',
 	'charset'=>'utf8'
 );
 
