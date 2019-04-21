@@ -44,16 +44,16 @@ if(isset($_POST['submit'])){
 <form action="admin_editproduct.php" method="post"> 
 
         <label for="id">Product ID:</label>
-        <input type="text" id="id" name="id" width="100%" value="<?php echo $found_movie['movies_id'];?>"><br><br>
+        <input type="text" id="id" name="id" value="<?php echo $found_movie['movies_id'];?>"><br><br>
 
         <label for="title">Product Name:</label>
-        <input type="text" id="title" name="title" width="100%" value="<?php echo $found_movie['movies_title'];?>"><br><br>
+        <input type="text" id="title" name="title" value="<?php echo $found_movie['movies_title'];?>"><br><br>
 
         <label for="cover">Product Image:</label>
-        <input type="text" id="cover" name="cover" width="100%" value="<?php echo $found_movie['movies_cover'];?>"><br><br>
+        <input type="file" id="cover" name="cover" value="<?php echo $found_movie['movies_cover'];?>"><br><br>
 
         <label for="story">Product Description:</label>
-        <input type="text" id="story" name="story" width="100%" value="<?php echo $found_movie['movies_storyline'];?>"><br><br>
+        <input type="text" id="story" name="story" value="<?php echo $found_movie['movies_storyline'];?>"><br><br>
 
         <button type="submit" name="submit">Edit Product</button>
 </form>
