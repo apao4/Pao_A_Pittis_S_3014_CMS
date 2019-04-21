@@ -20,6 +20,7 @@ if(isset($_GET['filter'])){
 	<meta charset='utf-8'>
 	<title>Sport Chek CMS</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
 	<?php include('templates/header.html'); ?>

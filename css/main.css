@@ -1,7 +1,17 @@
+body
+{
+    margin: 0;
+}
+
 #imgCovers 
 {
-    width:90%;
+    width: 90%;
     padding: 5%;
+}
+
+#imgCoverss
+{
+    width: 30%;
 }
 
 .cont li 
@@ -23,7 +33,9 @@
 {
     width: 100%;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
 }
 
 .cont
@@ -34,14 +46,22 @@
 #more
 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: red;
     margin: 0 auto;
+    text-transform: uppercase;
 }
 
 #more:hover
 {
-    color: red;
+    color: black;
+}
+
+.titleD
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
 }
 
 
@@ -77,24 +97,26 @@ body {
         margin: 0 auto;
         background-color: black;
         font-size: 1.5em;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         margin-top: 20px;
     }
     
     #menu a
     {
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 2%;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin-left: 2%;
+        margin-right: 2%;
         text-decoration: none;
         cursor: pointer;
+        text-transform: uppercase;
     }
     
     #menu a:hover
     {
         color: red;
-        text-decoration: underline;
+        border-bottom: 3px solid red;
     }
 
     #moreDetails
@@ -174,7 +196,7 @@ body {
 #menu a
 {
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     display: block;
     text-decoration: none;
     cursor: pointer;
@@ -239,7 +261,7 @@ footer p
 footer p
 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
