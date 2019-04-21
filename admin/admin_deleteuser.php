@@ -27,7 +27,7 @@
     <title>Delete User</title>
 </head>
 <body>
-    <h2>Time to destroy some accounts...</h2>
+    <h2>Delete An Account</h2>
 <table>
     <thead>
     <tr>

@@ -86,7 +86,28 @@ function deleteUser($id){
     if($delete_user->rowCount()){
         redirect_to('../index.php');
     }else{
-        $message = 'Not delete yet..';
+        $message = 'Not deleted yet..';
+        return $message;
+    }
+}
+
+
+function deleteProduct($id){
+
+
+    include('connect.php');
+    $delete_product_query = 'DELETE FROM tbl_movies WHERE movies_id = :id';
+    $delete_product = $pdo->prepare($delete_product_query);
+    $delete_product->execute(
+        array(
+            ':id'=>$id
+        )
+    );
+
+    if($delete_product->rowCount()){
+        redirect_to('../index.php');
+    }else{
+        $message = 'Not deleted yet..';
         return $message;
     }
 }

@@ -28,6 +28,7 @@
             <li><a href="admin_deleteuser.php">Delete User</a></li>
             <li><a href="scripts/caller.php?caller_id=logout">Sign Out</a></li>
             <li><a href="admin_addmovie.php">Add A Product</a></li>
+            <li><a href="admin_deleteproduct.php">Delete A Product</a></li>
         </ul>
     </nav>
 </body>
